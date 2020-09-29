@@ -2,15 +2,15 @@ body {
   font-family: Raleway;
   color: #ffffff;
   font-size: 15px;
-
+  background-image: url(../images/background.jpg);
   background-color: #242b33;
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 1044px;
   margin: 0 auto;
 }
 .header {
-  background-color: #242b33;
   padding: 30px 0;
 }
 ul,
@@ -20,6 +20,7 @@ li {
   margin: 0;
 }
 a {
+  color: #ffffff;
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -32,9 +33,18 @@ a {
 }
 .menu {
   display: flex;
+  position: relative;
 }
 .menu-item {
   margin-right: 40px;
+}
+.menu-item ul {
+  display: none;
+  position: absolute;
+  padding: 10px;
+}
+.menu-item:hover ul {
+  display: block;
 }
 .menu-item a {
   color: #ffffff;
@@ -46,11 +56,7 @@ a {
 .menu-item a:hover {
   border-bottom: 1px solid #ffffff;
 }
-}
-.two-image {
-  background-image: url(photo-1493246318656-5bfd4cfb29b8.jpg);
-}
-.two-title {
+.title {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: bold;
@@ -59,10 +65,63 @@ a {
   text-align: center;
   color: #d4c17f;
   padding: top;
+  margin-top: 225px;
 }
-.two-address {
+.mouse {
+  text-align: center;
+  margin-top: 107.96px;
+  margin-bottom: 100px;
+}
+.address {
   font-family: Raleway;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-top: 200px;
+}
+.address_img {
+  display: inline;
+  margin-right: 100px;
+  text-align: center;
+}
+.attractions {
+  padding: 194px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.container1 {
+  display: inline;
+}
+
+/* FOOTER */
+.footer {
+  position: relative;
+  padding: 118px 0 113px 0;
+  background: #2d343c;
+}
+
+.footer__container {
+  font-family: raleway;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column--small {
+  width: 100px;
+  height: 100px;
+  padding-top: 15px;
+}
+.footer__column--large {
+  width: 239px;
+  height: 149px;
+}
+.footer__column__large--email {
+  font-family: raleway;
+  font-weight: 700;
+  color: #d4c17f;
 }

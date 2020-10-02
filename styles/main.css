@@ -112,16 +112,30 @@ a {
 }
 
 .footer__column--small {
-  width: 100px;
-  height: 100px;
-  padding-top: 15px;
+  width: 119px;
 }
 .footer__column--large {
   width: 239px;
-  height: 149px;
 }
-.footer__column__large--email {
+.footer__list {
+  margin-top: 35px;
+}
+
+.footer__list-item:not(:first-child) {
+  margin-top: 15px;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__link:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.footer-address {
+  margin-top: 15px;
+  text-decoration: none;
+}
+.address-email {
   font-family: raleway;
-  font-weight: 700;
+  font-size: 700px;
   color: #d4c17f;
 }
